@@ -1,21 +1,26 @@
 {
   "name": "webpack-react-smtp",
   "version": "1.0.0",
-  "description": "single page react app for finding parts",
-  "main": "index.js",
+  "description": "single page application for showing parts.\r Hypothetical job description whereby I create a reusable, responsive UI/webpage for showing a part's details.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+   "start": "webpack serve --config ./webpack.config.js --mode development"
+},
   "repository": {
     "type": "git",
-    "url": "will fill in"
+    "url": "git+https://github.com/hicksey-makes/webpack-react-smtp.git"
   },
-  "keywords": [
-    "react",
-    "application",
-    "single-page",
-    "responsive"
-  ],
+  "keywords": [],
   "author": "Sam Hicks",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hicksey-makes/webpack-react-smtp/issues"
+  },
+  "homepage": "https://github.com/hicksey-makes/webpack-react-smtp#readme"
 }
