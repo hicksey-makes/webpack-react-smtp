@@ -1,0 +1,21 @@
+{
+  "name": "webpack-react-smtp",
+  "version": "1.0.0",
+  "description": "single page react app for finding parts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "will fill in"
+  },
+  "keywords": [
+    "react",
+    "application",
+    "single-page",
+    "responsive"
+  ],
+  "author": "Sam Hicks",
+  "license": "MIT"
+}
