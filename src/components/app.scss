@@ -1,3 +1,6 @@
+@import url(../font.scss);
+
+
 .container {
   height: 100vh;
   background-color: #E7E3EB;
@@ -6,7 +9,18 @@
       background-color: #6200EE;
       h1 {
         color: #FFF;
+        font-family: 'Open Sans Italic'
       }
+  }
+  .react-logo img{
+    // background: url('../Assets/Images/SMTPlogo.png') no-repeat center;
+    width: 500px;
+    height: auto;
+  // background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 
 }
