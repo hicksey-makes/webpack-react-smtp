@@ -7,8 +7,8 @@ const App = () => {
       <div className="header">
         <h1>Welcome to my React application</h1>
       </div>
-    </div>  
+    </div>
   )
 }
 
-export default Home
+export default App
