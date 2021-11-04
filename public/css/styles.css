@@ -1,3 +1,4 @@
+/***   Global   ***/
 * {
   box-sizing: border-box;
 }
@@ -6,15 +7,67 @@ body {
   margin: 0;
 }
 
+/***   Header   ***/
 .logo-contain {
   background-color: #F1F1F1;
   max-width: 100%
   /* padding: 5px; */
 }
 
-
-
 .logo-contain img {
   max-width: 45%;
   height: auto;
+}
+
+
+/***   Nav   ***/
+.nav-contain {
+  position: relative;
+  min-height: 208px;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  display: block;
+}
+
+.not-found-img {
+  position: absolute;
+  right: 0;
+  display: block;
+  top: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #F1F1F1;
+  border: 1px solid #555;
+}
+
+.nav li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.nav li:last-child {
+  border-bottom: none;
+}
+
+.nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
 }
