@@ -41,6 +41,10 @@ body {
   padding: 5px;
 }
 
+.not-found-img img {
+  max-width: 100%;
+  height: auto;
+}
 .nav ul {
   list-style-type: none;
   margin: 0;
