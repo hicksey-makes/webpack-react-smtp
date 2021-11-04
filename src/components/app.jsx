@@ -8,7 +8,7 @@ const App = () => {
       <div className="header">
         <h1>Welcome to my React application</h1>
       </div>
-      <div className="react-logo"><img src={Icon}></img></div>
+      
     </div>
   )
 }

@@ -1,3 +1,20 @@
-.logo-wrap {
-  background-color: red;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.logo-contain {
+  background-color: #F1F1F1;
+  max-width: 100%
+  /* padding: 5px; */
+}
+
+
+
+.logo-contain img {
+  max-width: 45%;
+  height: auto;
 }
