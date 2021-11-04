@@ -75,3 +75,24 @@ li a:hover {
   background-color: #555;
   color: white;
 }
+
+/***   Part Info Section   ***/
+#part-headline {
+  font-size: 42px;
+  line-height: 48px;
+  padding-top: 40px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 10px 25px;
+}
+
+.flex-1 {
+  flex-basis: 800px;
+}
+
+.flex-2 {
+  flex-basis: 300px;
+  flex-shrink: 2;
+}
