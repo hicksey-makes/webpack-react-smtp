@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, './src/index.js'),
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -15,14 +16,13 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(woff|woff2|eot|ttf|png|svg|jpg)$/,
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: {
-          loader: 'url-loader'
-        },
-        type: 'javascript/auto'
+          loader: 'file-loader',
+        }
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: 'asset/resource'
       }
     ]
@@ -36,6 +36,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
-  },
+  }
 
 };

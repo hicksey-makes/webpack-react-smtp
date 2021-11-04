@@ -1,6 +1,5 @@
 @import url(../font.scss);
 
-
 .container {
   height: 100vh;
   background-color: #E7E3EB;
@@ -9,10 +8,11 @@
       background-color: #6200EE;
       h1 {
         color: #FFF;
-        font-family: 'Open Sans Italic'
+        font-family: 'Nunito';
+        font-style: italic;
       }
   }
-  .react-logo img{
+  .react-logo img {
     // background: url('../Assets/Images/SMTPlogo.png') no-repeat center;
     width: 500px;
     height: auto;

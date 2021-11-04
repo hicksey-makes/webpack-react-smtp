@@ -3,7 +3,6 @@ import './app.scss';
 import Icon from '../Assets/Images/SMTPlogo.png';
 
 const App = () => {
-
   return (
     <div className="container">
       <div className="header">
