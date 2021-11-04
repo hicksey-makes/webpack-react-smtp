@@ -96,3 +96,9 @@ li a:hover {
   flex-basis: 300px;
   flex-shrink: 2;
 }
+
+.flex-1 img {
+  max-width: 100%;
+  height: auto;
+  
+}
