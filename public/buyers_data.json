@@ -1,0 +1,62 @@
+[
+  {
+    "Make": "FORD",
+    "Model": "ESCAPE",
+    "Year": "12-11",
+    "Engine": "All",
+  },
+  {
+    "Make": "FORD",
+    "Model": "ESCAPE",
+    "Year": "2007",
+    "Engine": "All",
+  },
+  {
+    "Make": "FORD",
+    "Model": "ESCAPE",
+    "Year": "08-07",
+    "Engine": "L4-2.3L",
+  },
+  {
+    "Make": "FORD",
+    "Model": "ESCAPE",
+    "Year": "12-09",
+    "Engine": "L4-2.5L",
+  },
+  {
+    "Make": "FORD",
+    "Model": "ESCAPE",
+    "Year": "12-07",
+    "Engine": "V6-3.0L",
+  },
+  {
+    "Make": "FORD",
+    "Model": "FOCUS",
+    "Year": "07-06",
+    "Engine": "L4-2.0L",
+  },
+  {
+    "Make": "FORD",
+    "Model": "FOCUS",
+    "Year": "07-06",
+    "Engine": "L4-2.3L",
+  },
+  {
+    "Make": "MERCURY",
+    "Model": "MARINER",
+    "Year": "08-07",
+    "Engine": "L4-2.3L",
+  },
+  {
+    "Make": "MERCURY",
+    "Model": "MARINER",
+    "Year": "11-09",
+    "Engine": "L4-2.5L",
+  },
+  {
+    "Make": "MERCURY",
+    "Model": "MARINER",
+    "Year": "11-07",
+    "Engine": "V6-3.0L",
+  },
+]
