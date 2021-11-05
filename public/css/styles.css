@@ -100,5 +100,8 @@ li a:hover {
 .flex-1 img {
   max-width: 100%;
   height: auto;
-  
+}
+
+#feature {
+  margin-bottom: 75px;
 }

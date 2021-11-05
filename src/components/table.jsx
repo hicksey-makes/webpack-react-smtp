@@ -1,6 +1,6 @@
-import React, {useEffect, useState, Component} from 'react';
+import React, {useEffect, useState} from 'react';
 
-function TableMaker(props) {
+function TableMaker() {
   const [partAtts, setPartAtts] = useState({});
 
   useEffect(() => {
