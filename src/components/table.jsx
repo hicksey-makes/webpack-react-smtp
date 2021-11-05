@@ -17,7 +17,7 @@ function TableMaker(props) {
     console.log(partAtts);
   }
   return  (
-    <div>
+    <div className="comp-space">
       <h2 className="section-head">PARTS ATTRIBUTES</h2>
       <table>
         <thead>
