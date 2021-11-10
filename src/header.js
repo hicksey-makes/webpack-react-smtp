@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import CollapseNav from './components/nav-coll.jsx';
 
 ReactDOM.render(
-  <App />,
+  <CollapseNav />,
   document.getElementById('nav')
 );

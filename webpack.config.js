@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname, './src/index.js'),
+  entry: ['./src/index.js', './src/header.js'],
   devtool: 'source-map',
   module: {
     rules: [
