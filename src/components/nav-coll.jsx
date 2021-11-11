@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function CollapseNav() {
   const [navDisplay, setNavDisplay] = useState(false);
@@ -8,6 +10,8 @@ function CollapseNav() {
   }
 
   return (
+    <>
+
     <div className={
       "topnav " +
       (navDisplay ? '' : 'remove-nav')} id="myTopnav">
@@ -19,10 +23,11 @@ function CollapseNav() {
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#"><img src="../Assets/Images/finding-brand.png" alt="Request a brand" /></a></li>
-        <li><a href="javascript:void(0);" className="icon" onClick="toggleNavbar()">&#9776;</a></li>
+
       </ul>
     </div>
-  );
+    <a href="#" className="icon" onClick={() => toggleNavbar()}><FontAwesomeIcon icon={faBars} /></a>
+  </>);
 
 
 }
