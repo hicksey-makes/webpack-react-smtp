@@ -11,7 +11,10 @@ function CollapseNav() {
 
   return (
     <>
-
+    <div className="flex" id="toggle-wrap">
+    <div className="first-flex"></div>
+    <a href="#" className="icon second-flex" id="icon" onClick={() => toggleNavbar()}><FontAwesomeIcon icon={faBars} /></a>
+    </div>
     <div className={
       "topnav " +
       (navDisplay ? '' : 'remove-nav')} id="myTopnav">
@@ -25,8 +28,8 @@ function CollapseNav() {
         <li><a href="#"><img src="../Assets/Images/finding-brand.png" alt="Request a brand" /></a></li>
 
       </ul>
+    
     </div>
-    <a href="#" className="icon" onClick={() => toggleNavbar()}><FontAwesomeIcon icon={faBars} /></a>
   </>);
 
 
