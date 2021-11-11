@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
+import Part from '../Assets/Images/finding-brand.png';
 
 function CollapseNav() {
   const [navDisplay, setNavDisplay] = useState(false);
@@ -23,12 +25,12 @@ function CollapseNav() {
         <li><a href="#">Features</a></li>
         <li><a href="#">Mobile App</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#"><img src="../Assets/Images/finding-brand.png" alt="Request a brand" /></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faTwitter}  /></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faFacebook}  /></a></li>
+        <li><a href="#"><img src={Part} alt="Request a brand" /></a></li>
 
       </ul>
-    
+
     </div>
   </>);
 

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Building a single page application for showing part details",
   "main": "webpack.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
