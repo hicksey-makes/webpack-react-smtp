@@ -12,7 +12,7 @@ function BuyersTMaker() {
   }, []);
 
   if (compatMods) {
-    console.log(compatMods);
+    // console.log(compatMods);
   }
 
   return (
@@ -29,7 +29,7 @@ function BuyersTMaker() {
         </thead>
         <tbody>
           {compatMods.map((car, index) => {
-            console.log(car);
+            // console.log(car);
             return <tr key={index}>
               <td id="no-widen">{car.Make}</td>
               <td>{car.Model}</td>

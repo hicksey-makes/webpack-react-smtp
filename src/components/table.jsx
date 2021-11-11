@@ -14,7 +14,7 @@ function TableMaker() {
 
   }, []);
   if (partAtts) {
-    console.log(partAtts);
+    // console.log(partAtts);
   }
   return  (
     <div className="comp-space">

@@ -14,7 +14,7 @@ function PartMaker() {
   }, []);
 
   if (partDats) {
-    console.log(partDats);
+    // console.log(partDats);
   }
   return (
     <div className="comp-space">
