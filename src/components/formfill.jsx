@@ -22,20 +22,11 @@ function FillForm() {
   .then(response => response.json())
   .then(data => {
     console.log(data);
-    // this.setState({
-    //   friends: response
-    // })
-    data.forEach((car, i) => {
-      setMake(car.Make);
-      setModel(car.Model);
-      setYear(car.Year);
-      setEngine(car.Engine);
-    });
     setCars(data);
   })
   .catch(err => { console.error(err);
   });
-});
+}, []);
 
   function handleMakeChange(e) {
     setMake(e);
@@ -53,8 +44,12 @@ function FillForm() {
     setEngine(e);
   }
 
+  function handleIdChange(e) {
+    setId(e);
+  }
+
   function Create(e) {
-    e.preventDefault();
+    // e.preventDefault();
     //create entities
     fetch("https://fairestdb.p.rapidapi.com/car/car.Model", {
       "method": "POST",
@@ -80,7 +75,7 @@ function FillForm() {
 
   function Delete(e) {
     // delete entity - DELETE
-    e.preventDefault();
+    // e.preventDefault();
     // deletes entities
     fetch(`https://fairestdb.p.rapidapi.com/car/car.Model/_id/${id}`, {
       "method": "DELETE",
@@ -148,13 +143,25 @@ function FillForm() {
                   onChange={(e) => handleEngineChange(e.target.value)}
                   />
               </label>
+              <label htmlFor="id">
+                Car Id:
+                <input
+                  name="id"
+                  id="id"
+                  type="text"
+                  className="form-control"
+                  value={id}
+                  onChange={(e) => handleIdChange(e.target.value)}
+                  required
+                  />
+              </label>
               <button className="btn btn-primary" type='button' onClick={(e) => Create(e)}>
                 Add
               </button>
               <button className="btn btn-info" type='button'>
                   Update
               </button>
-              <button className="btn btn-danger" type='button'>
+              <button className="btn btn-danger" type='button' onClick={(e) => Delete(e)}>
                   Delete
               </button>
             </form>
