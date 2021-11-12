@@ -27,15 +27,24 @@ function PartMaker() {
   const brand = partDeets.map(partdeet => partdeet.Brand);
   const type = partDeets.map(partdeet => partdeet['Part-Type']);
   const number = partDeets.map(partdeet => partdeet['Part-Number']);
-  // console.log(details);
+  console.log(typeof brand);
+  // let partpropvals = partDeets.forEach(partdeet => {
+  //   console.log(Object.entries(partdeet));
+  //   return Object.entries(partdeet).forEach(pair => {
+  //       console.log(pair[1]);
+  //       return (
+  //         <p><strong>{pair[0]}: </strong>{pair[1]}</p>
+  //       );
+  //     });
+  // });
 
    return (
      <div className="comp-space">
        <h2 className="section-head">PART INFORMATION</h2>
        <div id="part-wrap">
-         <p><strong>Brand: </strong>{brand}</p>
-         <p><strong>Part Number: </strong>{number}</p>
-         <p><strong>Part Type: </strong>{type}</p>
+          <p><strong>Brand: </strong>{brand}</p>
+          <p><strong>Part Number: </strong>{number}</p>
+          <p><strong>Part Type: </strong>{type}</p>
        </div>
      </div>
   )
