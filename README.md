@@ -1,9 +1,10 @@
 # webpack-react-showmetheparts
-single page application for showing parts.
-Hypothetical job description whereby I create a reusable, responsive UI/webpage for showing a part's details.
+Reusable, single-page application for retrieving and showing parts from a database.
+Hypothetical job description:
+- Client wants a single-page, responsive app to retrieve and display specific part information.
+- The same page can be used for many parts that are stored in the database.
+- I'm building this page with ReactJS.
+- Uses Webpack to bundle modules.
+- Uses Rapidapi's faiRESTdb API to store sample part data.  
 
-I am creating a single page application where I will fetch data from a server and fill page details based upon the part data received from the server. 
-It is a single page app, built with react and utilizing webpack.
-Bootstrap is used to make it responsive.  
-
-**A reusable UI for parts received from a server**
+**A reusable, responsive UI for parts received from a database**
