@@ -126,6 +126,9 @@ table {
     padding: 5px 25px 25px 25px;
 }
 
+.grow-height {
+  min-height: 500px;
+}
 @media only screen and (min-width: 640px) {
   #icon {
     margin-top: -35px;

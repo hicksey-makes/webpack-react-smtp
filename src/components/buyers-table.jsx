@@ -1,18 +1,28 @@
 import React, {useEffect, useState} from 'react';
 
 function BuyersTMaker() {
-  const [compatMods, setCompatMods] = useState([]);
+  const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch('../buyers_data.json')
-    .then(response => response.json())
-    .then(data => {
-      setCompatMods(data);
-    });
-  }, []);
+    // read all entities
+  fetch("https://fairestdb.p.rapidapi.com/car/car.Model", {
+    "method": "GET",
+    "headers": {
+      "x-rapidapi-host": "fairestdb.p.rapidapi.com",
+      "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    setCars(data);
+  })
+  .catch(err => { console.error(err);
+  });
+}, []);
 
-  if (compatMods) {
-    // console.log(compatMods);
+  if (cars) {
+    console.log(cars);
   }
 
   return (
@@ -28,7 +38,7 @@ function BuyersTMaker() {
           </tr>
         </thead>
         <tbody>
-          {compatMods.map((car, index) => {
+          {cars.map((car, index) => {
             // console.log(car);
             return <tr key={index}>
               <td id="no-widen">{car.Make}</td>

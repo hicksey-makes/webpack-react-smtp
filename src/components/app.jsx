@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './app.scss';
 import Icon from '../Assets/Images/SMTPlogo.png';
 import TableMaker from './table.jsx';

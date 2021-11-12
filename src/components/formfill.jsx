@@ -1,32 +1,12 @@
 import React, {useState, useEffect} from 'react';
 
 function FillForm() {
-  const [cars, setCars] = useState([]);
+
   const [make, setMake] = useState("");
   const [model, setModel] = useState("");
   const [year, setYear] = useState("");
   const [engine, setEngine] = useState("");
   const [id, setId] = useState("");
-
-
-
-  useEffect(() => {
-    // read all entities
-  fetch("https://fairestdb.p.rapidapi.com/car/car.Model", {
-    "method": "GET",
-    "headers": {
-      "x-rapidapi-host": "fairestdb.p.rapidapi.com",
-      "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    setCars(data);
-  })
-  .catch(err => { console.error(err);
-  });
-}, []);
 
   function handleMakeChange(e) {
     setMake(e);
