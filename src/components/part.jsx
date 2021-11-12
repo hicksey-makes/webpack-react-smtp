@@ -22,27 +22,23 @@ function PartMaker() {
   }, []);
 
   if (partDeets) {
-    // console.log(partDeets);
+    console.log(partDeets);
   }
+  const brand = partDeets.map(partdeet => partdeet.Brand);
+  const type = partDeets.map(partdeet => partdeet['Part-Type']);
+  const number = partDeets.map(partdeet => partdeet['Part-Number']);
+  // console.log(details);
+
    return (
      <div className="comp-space">
        <h2 className="section-head">PART INFORMATION</h2>
        <div id="part-wrap">
-        {partDeets.forEach(part => {
-           console.log(part);
-           return (
-             <div id={part._id}>
-               <p><strong>Brand: </strong>{part.Brand}</p>
-               <strong>Part Number: </strong>{part['Part-Number']}
-               <strong>Part Type: </strong>{part['Part-Type']}
-               <strong>Comment: </strong>
-
-           </div>);
-          })
-        }
+         <p><strong>Brand: </strong>{brand}</p>
+         <p><strong>Part Number: </strong>{number}</p>
+         <p><strong>Part Type: </strong>{type}</p>
        </div>
      </div>
-  );
+  )
 }
 
 export default PartMaker;

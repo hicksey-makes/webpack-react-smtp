@@ -19,7 +19,7 @@ function BuyersTMaker() {
   })
   .catch(err => { console.error(err);
   });
-}, []);
+  }, []);
 
   if (cars) {
     console.log(cars);
