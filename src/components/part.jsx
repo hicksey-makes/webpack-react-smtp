@@ -4,16 +4,19 @@ function PartMaker() {
   const [partDeets, setPartDeets] = useState([]);
 
   useEffect(() => {
-    fetch("https://fairestdb.p.rapidapi.com/part/partModel", {
+    fetch("https://fairestdb.p.rapidapi.com/carpart/carpartModel", {
 	     "method": "GET",
 	      "headers": {
 		        "x-rapidapi-host": "fairestdb.p.rapidapi.com",
 		        "x-rapidapi-key": "23680a36f3msh74c57401435d3cfp151b19jsndc9f0c9b453e"
 	      }
     })
-    .then(response => response.json())
+    .then(response => {
+      // console.log(response);
+      return response.json()
+    })
     .then(data => {
-	      console.log(data);
+	      // console.log(data);
         setPartDeets(data);
     })
     .catch(err => {
@@ -21,13 +24,14 @@ function PartMaker() {
     });
   }, []);
 
-  if (partDeets) {
-    console.log(partDeets);
-  }
+  // if (partDeets) {
+  //   console.log(partDeets);
+  // }
   const brand = partDeets.map(partdeet => partdeet.Brand);
   const type = partDeets.map(partdeet => partdeet['Part-Type']);
   const number = partDeets.map(partdeet => partdeet['Part-Number']);
-  console.log(typeof brand);
+  const comment = partDeets.map(partdeet => partdeet.Comment);
+  // console.log(comment);
   // let partpropvals = partDeets.forEach(partdeet => {
   //   console.log(Object.entries(partdeet));
   //   return Object.entries(partdeet).forEach(pair => {
@@ -45,6 +49,7 @@ function PartMaker() {
           <p><strong>Brand: </strong>{brand}</p>
           <p><strong>Part Number: </strong>{number}</p>
           <p><strong>Part Type: </strong>{type}</p>
+          <p><strong>Comment: </strong>{comment}</p>
        </div>
      </div>
   )

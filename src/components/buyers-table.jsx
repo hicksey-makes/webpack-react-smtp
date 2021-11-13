@@ -14,16 +14,16 @@ function BuyersTMaker() {
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    // console.log(data);
     setCars(data);
   })
   .catch(err => { console.error(err);
   });
   }, []);
 
-  if (cars) {
-    console.log(cars);
-  }
+  // if (cars) {
+  //   console.log(cars);
+  // }
 
   return (
     <div className="comp-space">

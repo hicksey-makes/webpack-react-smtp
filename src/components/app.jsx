@@ -5,10 +5,12 @@ import TableMaker from './table.jsx';
 import PartMaker from './part.jsx';
 import BuyersTMaker from './buyers-table.jsx';
 import FillForm from './formfill.jsx';
+import ImgMaker from './partimg.jsx';
 
 const App = () => {
   return (
     <div className="container">
+      <ImgMaker  />
       <FillForm  />
       <BuyersTMaker  />
       <PartMaker  />
