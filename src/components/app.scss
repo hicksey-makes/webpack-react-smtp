@@ -1,4 +1,21 @@
-@import url(../font.scss);
+@import '../font';
+
+// @font-face {
+//   font-family: 'MyFont';
+//   src: url('../Assets/Fonts/OpenSans-Regular.ttf') format('truetype');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+.topnav a, .features, .comp-space {
+  font-family: 'Open Sans Regular';
+}
+
+#part-headline {
+  font-size: 42px;
+  line-height: 48px;
+  /* padding-top: 40px; */
+}
 
 .container {
   // height: 100vh;

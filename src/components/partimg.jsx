@@ -34,7 +34,7 @@ function ImgMaker() {
   console.log(imagesrc);
 
    return (
-     <div className="flex-container col-container features">
+     <div className="flex-container col-container features comp-space">
        <div className="flex-1">
          <h1 id="part-headline">{brand}</h1>
          <a href="https://www.showmetheparts.com/?partno=00051&logkey=LPR&partkey=007381408&verify=c6cc1c4c-f262-47ee-aa39-c2627869b5e1"><img src={Part} alt="Buy Part Now"/></a>
