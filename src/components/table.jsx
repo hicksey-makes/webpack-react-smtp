@@ -17,7 +17,7 @@ function TableMaker() {
     // console.log(partAtts);
   }
   return  (
-    <div className="comp-space">
+    <div className="comp-space container">
       <h2 className="section-head">PARTS ATTRIBUTES</h2>
       <table>
         <thead>
@@ -29,8 +29,8 @@ function TableMaker() {
         <tbody>
           {Object.entries(partAtts).map(attribute => {
             return <tr key={attribute[0]}>
-                    <td>{attribute[0]}</td>
-                    <td>{attribute[1]}</td>
+                    <td className="contrast">{attribute[0]}</td>
+                    <td className="contrast">{attribute[1]}</td>
                   </tr>
             })
           }

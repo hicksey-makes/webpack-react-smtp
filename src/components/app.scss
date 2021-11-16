@@ -1,7 +1,6 @@
 @use '../font';
 
 
-
 .topnav a, .features, .comp-space {
   font-family: 'MyFont', monospace;
 }
@@ -9,32 +8,34 @@
 #part-headline {
   font-size: 42px;
   line-height: 48px;
-  /* padding-top: 40px; */
 }
 
 .container {
   // height: 100vh;
-  // background-color: #E7E3EB;
+  background-color: #E7E3EB;
+
   .header {
       padding: 15px 20px;
       background-color: #6200EE;
+
       h1 {
         color: #FFF;
-        font-family: 'Nunito';
-        font-style: italic;
+        font-family: 'MyFont', monospace;
       }
   }
+
   .react-logo img {
-    // background: url('../Assets/Images/SMTPlogo.png') no-repeat center;
     width: 500px;
     height: auto;
-  // background-size: contain;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
+    .contrast {
+      background-color: white;
+    }
 }
 
 /**   Navigation   **/
@@ -135,7 +136,7 @@ table {
 }
 
 #part-wrap {
-    padding: 5px 25px 25px 25px;
+    padding: 5px 25px 5px 25px;
 }
 
 .grow-height {
