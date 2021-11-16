@@ -93,3 +93,14 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+/***   Below components   ***/
+.contain img {
+  max-width: 192px;
+}
+
+#no-gap {
+  margin-top: -75px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
