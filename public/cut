@@ -1,7 +1,0 @@
-// index.html
-<div className="react-logo"><img src={Icon}></img></div>
-
-// app.jsx
-<div className="header">
-  <h1>Welcome to my React application</h1>
-</div>

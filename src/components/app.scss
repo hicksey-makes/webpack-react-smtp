@@ -1,4 +1,4 @@
-@import '../font';
+@use '../font';
 
 // @font-face {
 //   font-family: 'MyFont';
@@ -8,7 +8,7 @@
 // }
 
 .topnav a, .features, .comp-space {
-  font-family: 'Open Sans Regular';
+  font-family: 'Open Sans Regular', sans-serif;
 }
 
 #part-headline {
@@ -140,7 +140,7 @@ table {
 }
 
 #part-wrap {
-    padding: 5px 25px 25px 25px;
+    padding: 5px 25px 5px 25px;
 }
 
 .grow-height {
