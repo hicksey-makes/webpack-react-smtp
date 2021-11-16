@@ -26,7 +26,7 @@ function BuyersTMaker() {
   // }
 
   return (
-    <div className="comp-space">
+    <div className="comp-space container">
       <h2 className="section-head">BUYERS GUIDE</h2>
       <table>
         <thead>
@@ -41,10 +41,10 @@ function BuyersTMaker() {
           {cars.map((car, index) => {
             // console.log(car);
             return <tr key={index}>
-              <td id="no-widen">{car.Make}</td>
-              <td>{car.Model}</td>
-              <td>{car.Year}</td>
-              <td>{car.Engine}</td>
+              <td id="no-widen" className="contrast">{car.Make}</td>
+              <td className="contrast">{car.Model}</td>
+              <td className="contrast">{car.Year}</td>
+              <td className="contrast">{car.Engine}</td>
             </tr>
             })
           }
