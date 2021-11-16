@@ -2,7 +2,10 @@
 
 $navajo: #FFDB9E;
 $creamsicle: #FFD182;
-
+$primary1: #EFEDF1;
+$primary2: #6200EE;
+$primary3: #326380;
+$secondary: #181739;
 
 .topnav a, .features, .comp-space {
   font-family: 'Open Sans Regular', sans-serif;
@@ -19,18 +22,11 @@ $creamsicle: #FFD182;
 
 .container {
   // height: 100vh;
-  background-color: #E7E3EB;
+  background-color: $primary1;
 
-  .header {
-      padding: 15px 20px;
-      background-color: #6200EE;
-
-      h1 {
-        color: #FFF;
-        font-family: 'MyFont', monospace;
-      }
+  h1 {
+    color: $primary3;
   }
-
   .react-logo img {
     width: 500px;
     height: auto;
@@ -62,9 +58,17 @@ $creamsicle: #FFD182;
   }
   li {
     text-align: left;
+    border-bottom: 1px solid white;
   }
   li:last-child {
-    background-color: #039cd3;
+    background-color: $secondary;
+    border-bottom: none;
+    a:hover {
+      background-color: $secondary;
+    }
+  }
+  li:nth-child(6) {
+    border-bottom: none;
   }
   a {
     display: block;
