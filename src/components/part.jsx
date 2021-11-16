@@ -46,10 +46,10 @@ function PartMaker() {
      <div className="comp-space">
        <h2 className="section-head">PART INFORMATION</h2>
        <div id="part-wrap">
-          <p><strong>Brand: </strong>{brand}</p>
-          <p><strong>Part Number: </strong>{number}</p>
-          <p><strong>Part Type: </strong>{type}</p>
-          <p><strong>Comment: </strong>{comment}</p>
+          <p><strong>Brand: </strong><span className="mono">{brand}</span></p>
+          <p><strong>Part Number: </strong><span className="mono">{number}</span></p>
+          <p><strong>Part Type: </strong><span className="mono">{type}</span></p>
+          <p><strong>Comment: </strong><span className="mono">{comment}</span></p>
        </div>
      </div>
   )

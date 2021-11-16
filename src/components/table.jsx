@@ -28,9 +28,9 @@ function TableMaker() {
         </thead>
         <tbody>
           {Object.entries(partAtts).map(attribute => {
-            return <tr key={attribute[0]}>
-                    <td className="contrast">{attribute[0]}</td>
-                    <td className="contrast">{attribute[1]}</td>
+            return <tr className="contrast mono" key={attribute[0]}>
+                    <td>{attribute[0]}</td>
+                    <td>{attribute[1]}</td>
                   </tr>
             })
           }

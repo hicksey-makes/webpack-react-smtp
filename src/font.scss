@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Open Sans Regular';
-  src: './Assets/Fonts/OpenSans-Regular.ttf' format('truetype');
+  src: url('./Assets/Fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
+}
 
-  /*font-family: 'MyFont';
-  src: url('./Assets/Fonts/SourceCodePro-Medium') format('truetype');
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./Assets/Fonts/SourceCodePro-Medium.ttf') format('truetype');
   font-style: normal;
-*/
 }

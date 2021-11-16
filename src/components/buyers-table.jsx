@@ -40,7 +40,7 @@ function BuyersTMaker() {
         <tbody>
           {cars.map((car, index) => {
             // console.log(car);
-            return <tr key={index}>
+            return <tr className="mono" key={index}>
               <td id="no-widen" className="contrast">{car.Make}</td>
               <td className="contrast">{car.Model}</td>
               <td className="contrast">{car.Year}</td>

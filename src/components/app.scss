@@ -1,8 +1,15 @@
 @use '../font';
 
+$navajo: #FFDB9E;
+$creamsicle: #FFD182;
+
 
 .topnav a, .features, .comp-space {
   font-family: 'Open Sans Regular', sans-serif;
+}
+
+.mono {
+  font-family: 'MyFont', monospace;
 }
 
 #part-headline {
@@ -62,14 +69,20 @@
   a {
     display: block;
     padding: 12px 20px;
-    font-weight: bold;
+    // font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: black;
   }
   a:hover {
-    background-color: #039cd3;
+    background-color: $creamsicle;
   }
+}
+
+.creamsicle {
+  background-color: $navajo;
 }
 
 .flex {

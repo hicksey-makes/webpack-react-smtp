@@ -15,10 +15,13 @@ function CollapseNav() {
     <>
     <div className="flex" id="toggle-wrap">
     <div className="first-flex"></div>
-    <a href="#" className="icon second-flex" id="icon" onClick={() => toggleNavbar()}><FontAwesomeIcon icon={faBars} /></a>
+    <a href="#" className="icon second-flex" id="icon" onClick={() => toggleNavbar()}>
+      <span className="sr-only">Toggle navigation</span>
+      <FontAwesomeIcon icon={faBars} />
+    </a>
     </div>
     <div className={
-      "topnav " +
+      "topnav creamsicle " +
       (navDisplay ? '' : 'remove-nav')} id="myTopnav">
       <ul>
         <li><a href="#">Home</a></li>
