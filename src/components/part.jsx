@@ -16,7 +16,7 @@ function PartMaker() {
       return response.json()
     })
     .then(data => {
-	      // console.log(data);
+	      console.log(data);
         setPartDeets(data);
     })
     .catch(err => {
