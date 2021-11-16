@@ -32,6 +32,7 @@ module.exports = {
   },
   devServer: {
     static: './public',
+    hot: true
   },
   output: {
     path: path.resolve(__dirname, './public'),

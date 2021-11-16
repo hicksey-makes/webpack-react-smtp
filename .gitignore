@@ -11,7 +11,7 @@ jspm_packages/
 dist/
 
 .npm
-
+.netlify
 .eslintcache
 
 *.tgz
