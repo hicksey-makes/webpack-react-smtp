@@ -68,7 +68,6 @@ body {
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
-
 }
 
 
@@ -102,5 +101,13 @@ body {
 #no-gap {
   margin-top: -75px;
   padding-top: 35px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+/***  Footer  ***/
+#foot {
+  border-top: 2px solid #181739;
+  max-width: 92%;
+  padding-top: 0px;
+  padding-bottom: 10px;
 }
