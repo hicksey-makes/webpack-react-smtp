@@ -8,6 +8,10 @@ import BuyersTMaker from './buyers-table.jsx';
 import ImgMaker from './partimg.jsx';
 
 const App = () => {
+  if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+  }
+  
   return (
     <div className="container">
       <ImgMaker  />
